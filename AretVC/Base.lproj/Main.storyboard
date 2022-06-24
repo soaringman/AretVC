@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixz-3v-P8z">
-                                <rect key="frame" x="178" y="433" width="59.5" height="31"/>
+                                <rect key="frame" x="177.5" y="432.5" width="59.5" height="31"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Show"/>
@@ -25,14 +25,28 @@
                                     <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Um4-MU-ajX"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEw-tF-VLF">
+                                <rect key="frame" x="57" y="210" width="300" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="r9i-6P-KSi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="VEw-tF-VLF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="02a-TD-7Qm"/>
+                            <constraint firstItem="VEw-tF-VLF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="166" id="Gf5-y2-rkk"/>
                             <constraint firstItem="ixz-3v-P8z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mq1-xZ-97p"/>
                             <constraint firstItem="ixz-3v-P8z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="a6b-4u-KC9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="hiLabel" destination="VEw-tF-VLF" id="Bva-2Y-UaC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
